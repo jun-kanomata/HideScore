@@ -30,13 +30,7 @@ body:not(.show-score) .leagLeftScore:hover, body:not(.show-score) .leagCenterSco
 body:not(.show-score) .dataList .changeNumber, body:not(.show-score) .dataList .MeberListArrow::after, body:not(.show-score) .dataList .MeberListArrowUp:after {
   opacity: 0;
 }
-body:not(.show-score) .dataList:hover {
-  opacity: 0;
-  transition: 2s opacity;
-  opacity: 1;
-}
-body:not(.show-score) .dataList:hover .MeberListArrowUp:after {
-  opacity: 0;
+body:not(.show-score) .dataList:hover .changeNumber, body:not(.show-score) .dataList:hover .MeberListArrow::after, body:not(.show-score) .dataList:hover .MeberListArrowUp::after {
   transition: 2s opacity;
   opacity: 1;
 }
