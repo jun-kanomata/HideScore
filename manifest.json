@@ -1,0 +1,13 @@
+{
+    "name":"Hide scores",
+    "version":"0.0.1",
+    "manifest_version":3,
+    "description":"Hide scores from jleague.jp",
+    "content_scripts":[{
+    "matches":["*://www.jleague.jp/**"],
+    "css":["css/content_script.css"],
+    "js":["js/content_script.js"],
+    "run_at":"document_end",
+    "all_flames": false
+    }]
+}

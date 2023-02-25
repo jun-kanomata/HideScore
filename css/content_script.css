@@ -1,0 +1,48 @@
+body:not(.show-score) .leagLeftScore, body:not(.show-score) .leagCenterScore, body:not(.show-score) .leagRightScore, body:not(.show-score) .teamMiddle, body:not(.show-score) .gameTable .point {
+  filter: blur(10px);
+  transition: 2s filter;
+}
+body:not(.show-score) .teamMiddle:hover, body:not(.show-score) .gameTable:hover .point {
+  filter: blur(0px);
+}
+body:not(.show-score) .leagAccScore:hover .leagLeftScore, body:not(.show-score) .leagAccScore:hover .leagAccScore .leagCenterScore, body:not(.show-score) .leagAccScore:hover .leagRightScore {
+  filter: blur(0px);
+}
+body:not(.show-score) .gameInfo__Member {
+  filter: blur(10px);
+  position: relative;
+  height: 2em;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 1s all;
+}
+body:not(.show-score) .gameInfo__Member:hover {
+  height: auto;
+  filter: blur(0px);
+}
+body:not(.show-score) .leagLeftScore, body:not(.show-score) .leagCenterScore, body:not(.show-score) .leagRightScore {
+  filter: blur(20px);
+  transition: 2s filter;
+}
+body:not(.show-score) .leagLeftScore:hover, body:not(.show-score) .leagCenterScore:hover, body:not(.show-score) .leagRightScore:hover {
+  filter: blur(0px);
+}
+body:not(.show-score) .dataList .changeNumber, body:not(.show-score) .dataList .MeberListArrow::after, body:not(.show-score) .dataList .MeberListArrowUp:after {
+  opacity: 0;
+}
+body:not(.show-score) .dataList:hover {
+  opacity: 0;
+  transition: 2s opacity;
+  opacity: 1;
+}
+body:not(.show-score) .dataList:hover .MeberListArrowUp:after {
+  opacity: 0;
+  transition: 2s opacity;
+  opacity: 1;
+}
+
+#HideScore {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}/*# sourceMappingURL=content_script.css.map */
