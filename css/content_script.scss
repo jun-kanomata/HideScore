@@ -35,11 +35,7 @@ body:not(.show-score) {
       opacity: 0;
     }
     &:hover {
-      opacity: 0;
-      transition: 2s opacity;
-      opacity: 1;
-      .MeberListArrowUp:after {
-        opacity: 0;
+      .changeNumber, .MeberListArrow::after, .MeberListArrowUp::after {
         transition: 2s opacity;
         opacity: 1;
       }
